@@ -47,12 +47,6 @@ export default function IntroScreen({ onReveal }) {
               className="text-white shrink-0"
             />
 
-            <Play
-              size={20}
-              fill="white"
-              className="text-white shrink-0"
-            />
-
             <span className="text-base sm:text-lg text-white font-medium">
               Clique aqui, amor
             </span>
