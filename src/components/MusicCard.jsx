@@ -42,7 +42,7 @@ export default function MusicCard() {
     <section className="mt-14">
       <audio
         ref={audioRef}
-        src="/music/planos.mp3"
+        src="/music/music.mp3"
         loop
       />
 
@@ -55,7 +55,7 @@ export default function MusicCard() {
         <div className="bg-zinc-900 p-5 rounded-2xl text-center">
 
         <img
-          src="/assets/planos.jpg"
+          src="/assets/imagem7.jpg"
           alt="Capa do álbum"
           onError={() => console.log("Imagem não encontrada")}
           className="
