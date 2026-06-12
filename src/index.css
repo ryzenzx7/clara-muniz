@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+@keyframes fallingHeart {
+  0% {
+    transform: translateY(-120px) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.falling-heart {
+  position: absolute;
+  top: -30px;
+  animation: fallingHeart linear infinite;
+}
+
+.falling-heart::before,
+.falling-heart::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  background: rgba(255, 105, 180, 0.35);
+  border-radius: 999px 999px 0 0;
+}
+
+.falling-heart::before {
+  left: 50%;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.falling-heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
