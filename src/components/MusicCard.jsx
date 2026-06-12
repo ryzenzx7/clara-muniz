@@ -69,11 +69,11 @@ export default function MusicCard() {
         />
 
           <h3 className="font-semibold text-lg mt-4">
-            Planos
+            É amor
           </h3>
 
           <p className="text-zinc-400 text-sm mt-1">
-            BK & Luccas Carlos
+            Jorge & Mateus
           </p>
 
           <button
